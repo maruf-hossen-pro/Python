@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(120deg, #6a11cb, #2575fc);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            animation: bg 10s infinite alternate;
+        }
+
+        @keyframes bg {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .result-box {
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            padding: 30px;
+            border-radius: 20px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 15px;
+            background: #00c6ff;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+        }
+
+        a:hover {
+            background: #0072ff;
+        }
+    </style>
+</head>
+<body>
+    <div class="result-box">
+        <h2>✅ The Sum is: {{ total }}</h2>
+        <a href="/">🔙 Back to Calculator</a>
+    </div>
+</body>
+</html>
